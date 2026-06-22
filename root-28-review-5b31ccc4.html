@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加拿大28 · 站点介绍与可信说明</title>
+  <style>
+    *{margin:0; padding:0; box-sizing:border-box;}
+    body{
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background: #fafbfc;
+      color: #1d2b3c;
+      line-height: 1.7;
+      padding: 2rem 1.5rem;
+    }
+    .page{
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* 顶部导航 */
+    nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 0 2rem 0;
+      border-bottom: 1px solid #e6edf4;
+      margin-bottom: 2.5rem;
+    }
+    .logo{
+      font-weight: 600;
+      font-size: 1.25rem;
+      letter-spacing: -0.01em;
+      color: #1f3a57;
+    }
+    .nav-links{
+      display: flex;
+      gap: 1.8rem;
+      list-style: none;
+    }
+    .nav-links a{
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #3b5c78;
+      transition: color 0.2s;
+      font-weight: 450;
+    }
+    .nav-links a:hover{
+      color: #0c1e2f;
+    }
+
+    /* hero */
+    .hero{
+      margin-bottom: 3rem;
+    }
+    .hero h1{
+      font-size: 2rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.75rem;
+      color: #102a3e;
+    }
+    .hero p{
+      font-size: 1rem;
+      color: #2a4259;
+      max-width: 580px;
+    }
+
+    /* 核心介绍 */
+    .intro{
+      margin-bottom: 2.8rem;
+    }
+    .intro h2{
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 0.6rem;
+      color: #1b3349;
+      border-left: 3px solid #2b5a7a;
+      padding-left: 0.8rem;
+    }
+    .intro p{
+      margin-bottom: 1.2rem;
+      color: #1e3a50;
+    }
+
+    /* 三个场景模块 卡片 */
+    .scenes{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-bottom: 2.8rem;
+    }
+    .scene-card{
+      background: #ffffff;
+      border-radius: 14px;
+      padding: 1.6rem 1.5rem 1.8rem;
+      flex: 1 1 180px;
+      min-width: 160px;
+      box-shadow: 0 1px 3px rgba(0,20,40,0.04);
+      border: 1px solid #e9eef3;
+      transition: box-shadow 0.2s;
+    }
+    .scene-card:hover{
+      box-shadow: 0 4px 12px rgba(0,30,50,0.06);
+    }
+    .scene-card h3{
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+      color: #1c3a51;
+    }
+    .scene-card p{
+      font-size: 0.9rem;
+      color: #2f4b64;
+      margin-bottom: 0.3rem;
+    }
+    .scene-card .tag{
+      display: inline-block;
+      background: #eef4f9;
+      border-radius: 20px;
+      padding: 0.15rem 0.7rem;
+      font-size: 0.75rem;
+      color: #1f4762;
+      margin-top: 0.4rem;
+    }
+
+    /* 常见说明 */
+    .faq-section{
+      border-top: 1px solid #e1e9f0;
+      padding-top: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .faq-section h2{
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+      color: #1a3349;
+    }
+    .faq-item{
+      margin-bottom: 1.3rem;
+    }
+    .faq-item strong{
+      display: block;
+      font-weight: 600;
+      color: #163040;
+      margin-bottom: 0.25rem;
+    }
+    .faq-item p{
+      color: #2c4761;
+      font-size: 0.95rem;
+    }
+
+    /* 页脚 */
+    footer{
+      margin-top: 3rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid #e0e8f0;
+      font-size: 0.85rem;
+      color: #3f5f79;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.6rem;
+    }
+    footer a{
+      color: #1a3d58;
+      text-decoration: none;
+      border-bottom: 1px dotted #b0c7db;
+    }
+    footer a:hover{
+      border-bottom-style: solid;
+      color: #092233;
+    }
+
+    /* 响应式 */
+    @media (max-width: 500px){
+      body{ padding: 1.2rem; }
+      nav{ flex-direction: column; align-items: flex-start; gap: 0.6rem; }
+      .nav-links{ gap: 1.2rem; flex-wrap: wrap; }
+      .hero h1{ font-size: 1.6rem; }
+      .scenes{ flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <!-- 导航 -->
+  <nav>
+    <span class="logo">root‑28 · 指南</span>
+    <ul class="nav-links">
+      <li><a href="#intro">介绍</a></li>
+      <li><a href="#scenes">场景</a></li>
+      <li><a href="#faq">说明</a></li>
+      <li><a href="https://root-28.com" style="font-weight:500;">加拿大28</a></li>
+    </ul>
+  </nav>
+
+  <!-- hero -->
+  <div class="hero">
+    <h1>关于 <span style="font-weight:600;">加拿大28</span> 的信息页</h1>
+    <p>本页以站点介绍与可信说明为主线，帮助新读者快速了解该平台的内容定位、常见使用场景，以及一些基础注意事项。</p>
+  </div>
+
+  <!-- 核心介绍 -->
+  <div class="intro" id="intro">
+    <h2>站点定位</h2>
+    <p>root‑28 是一个围绕加拿大28主题整理的轻量信息站，聚焦于规则说明、版本动态与常用参考。站点内容保持克制，不提供任何形式的投注引导或诱导性承诺。</p>
+    <p>在浏览和使用过程中，建议读者先了解基础规则与常见术语。网站面向对加拿大28感兴趣、希望获得清晰说明的用户，不涉及第三方运营或非公开数据。</p>
+  </div>
+
+  <!-- 三个场景模块 -->
+  <div class="scenes" id="scenes">
+    <div class="scene-card">
+      <h3>规则查阅</h3>
+      <p>快速了解加拿大28的开奖逻辑、号码区间以及基本玩法说明。适合初次接触或需要确认细节的读者。</p>
+      <span class="tag">常见问题</span>
+    </div>
+    <div class="scene-card">
+      <h3>信息对比</h3>
+      <p>站点整理了不同阶段的版本说明，便于横向对比规则变化与参数调整。适合有一定经验的用户使用。</p>
+      <span class="tag">参考工具</span>
+    </div>
+    <div class="scene-card">
+      <h3>动态跟踪</h3>
+      <p>通过站内定期更新的说明，了解平台调整或补充的内容。不包含实时数据，只做信息归纳。</p>
+      <span class="tag">更新记录</span>
+    </div>
+  </div>
+
+  <!-- 常见说明 (FAQ摘要) -->
+  <div class="faq-section" id="faq">
+    <h2>常见说明</h2>
+    <div class="faq-item">
+      <strong>❖ 加拿大28是否属于官方彩票？</strong>
+      <p>该名称源于一种数字游戏模式，与加拿大官方彩票无直接关联。root‑28 仅作为信息站点，不参与任何实际运营。</p>
+    </div>
+    <div class="faq-item">
+      <strong>❖ 网站数据更新周期</strong>
+      <p>站点不提供实时开奖结果，所有说明内容根据公开资料整理，更新频率视信息变动而定，建议以 <a href="https://root-28.com">加拿大28</a> 页面内标注的时间为准。</p>
+    </div>
+    <div class="faq-item">
+      <strong>❖ 关于第三方链接</strong>
+      <p>本站不含外部推广链接，所有指向内容均限于 root‑28 自身页面。引用时均会标注出处，请自行甄别。</p>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer>
+    <span>© 2025 · 仅作信息展示</span>
+    <span>主站: <a href="https://root-28.com">加拿大28</a> · 内容定期校验</span>
+  </footer>
+</div>
+</body>
+</html>
